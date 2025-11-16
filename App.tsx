@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Button } from 'react-native';
+
+import { useScreenStore } from './screens/store/store';
+import HomeScreen from './screens/HomeScreen';
+import ProfileScreen from './screens/Mebi';
+import SettingsScreen from './screens/Search';
 
 export default function App() {
+  const { currentScreen, setScreen } = useScreenStore();
+
+  const screens = {
+    home: <HomeScreen />,
+    mebi: <ProfileScreen />,
+    search: <SettingsScreen />,
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={{ flex: 1 }}>
+        {screens[currentScreen]}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
