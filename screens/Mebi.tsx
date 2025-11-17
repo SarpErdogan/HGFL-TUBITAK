@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text, TouchableOpacity,StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity,StyleSheet, Image } from 'react-native';
 import { useScreenStore } from './store/store'; 
 
 const ProfileScreen: React.FC = () => {
   const { currentScreen, setScreen } = useScreenStore();
   return (
     <View style={{ flex:1, justifyContent:'center', alignItems:'center', backgroundColor:'#99f3fdff' }}>
-      <Text>Profile Screen</Text>
+      <Text>Öncelikle kendi göreviniz için hazırlanmış giriş sayfasına tıklayınız.</Text>
+      <Image source={require('../assets/your-image.png')} style={{ width: 200, height: 200, marginVertical: 20 }} />
       <TouchableOpacity style={styles.homeButton} onPress ={()=> {setScreen("search")}}>
         <Text style={styles.homeButtonText}>◀</Text>
       </TouchableOpacity>
@@ -23,7 +24,7 @@ homeButton: {
     paddingHorizontal: 20,
     paddingVertical: 12,
     borderRadius: 12,
-    elevation: 6, // Android gölgesi
+    elevation: 6, 
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.25,

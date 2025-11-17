@@ -38,19 +38,19 @@ const SettingsScreen: React.FC = () => {
         <Text>Öğrenci istatistiklerine nasıl ulaşırım?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>birşey eklenecek</Text>
+        <Text>MEBİ teknik destek veya yardım bölümüne nasıl ulaşırım?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>birşey eklenecek</Text>
+        <Text>Platformda sertifika verilen eğitimler nerede bulunur?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>birşey eklenecek</Text>
+        <Text>Canlı ders veya video içerikleri açılmıyor, nasıl çözebilirim?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>birşey eklenecek</Text>
+        <Text>MEBİ platformunda öğretmen–öğrenci görevleri nasıl takip edilir?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>birşey eklenecek</Text>
+        <Text>MEBİ hesabıma giriş yapamıyorum, ne yapmalıyım?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.homeButton} onPress={()=> {setScreen("home")}}>
         <Text style={styles.homeButtonText}>◀</Text>
@@ -62,10 +62,10 @@ const SettingsScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',     // dikey hizalama
-    alignItems: 'center',        // width yönünde ortala
+    flexDirection: 'column',    
+    alignItems: 'center',       
     paddingTop: 40,
-    gap: 14,                     // elementler arası boşluk
+    gap: 14,                     
     backgroundColor: '#FFFFFF',
   },
   homeButton: {
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 12,
     borderRadius: 12,
-    elevation: 6, // Android gölgesi
+    elevation: 6,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.25,

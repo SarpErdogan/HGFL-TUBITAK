@@ -19,27 +19,27 @@ const HomeScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingVertical: 40,       // üst/alt boşluk
-    justifyContent: 'space-around', // butonları sayfaya yayar
-    alignItems: 'center',     // yatayda ortala
+    paddingVertical: 40,      
+    justifyContent: 'space-around', 
+    alignItems: 'center',    
     backgroundColor: '#FFFFFF',
   },
 
-  // ortak kare buton stili
+
   squareButton: {
-    width: '60%',             // ekran genişliğinin yüzde olarak ayarı (responsive)
-    aspectRatio: 1,           // genişlik = yükseklik => kare
+    width: '60%',            
+    aspectRatio: 1,          
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 12,         // köşeleri yuvarla
-    elevation: 4,             // android shadow
-    shadowColor: '#000',      // ios shadow
+    borderRadius: 12,         
+    elevation: 4,             
+    shadowColor: '#000',      
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
     shadowRadius: 4,
   },
 
-  // renk varyantları
+
   primary: {
     backgroundColor: '#0A84FF',
   },
