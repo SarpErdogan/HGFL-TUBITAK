@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Button } from 'react-native';
 
-import { useScreenStore } from './screens/store/store';
+import { useScreenStore } from './store/store';
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/Mebi';
 import SettingsScreen from './screens/Search';

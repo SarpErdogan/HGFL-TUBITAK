@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { useScreenStore } from './store/store'; 
+import { useScreenStore } from '../store/store'; 
 
 const HomeScreen: React.FC = () => {
   const { currentScreen, setScreen } = useScreenStore();
@@ -18,22 +18,21 @@ const HomeScreen: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingVertical: 40,      
-    justifyContent: 'space-around', 
-    alignItems: 'center',    
-    backgroundColor: '#FFFFFF',
+               
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 20,
   },
 
 
   squareButton: {
-    width: '60%',            
-    aspectRatio: 1,          
+    width: '100%',
+    height: "50%",
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 12,         
-    elevation: 4,             
-    shadowColor: '#000',      
+    borderRadius: 20,
+    elevation: 4,
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
     shadowRadius: 4,

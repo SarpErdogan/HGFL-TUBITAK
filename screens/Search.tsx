@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity,StyleSheet } from 'react-native';
-import { useScreenStore } from './store/store'; 
+import { useScreenStore } from '../store/store'; 
 
 const SettingsScreen: React.FC = () => {
   const { currentScreen, setScreen } = useScreenStore();
@@ -38,19 +38,19 @@ const SettingsScreen: React.FC = () => {
         <Text>Öğrenci istatistiklerine nasıl ulaşırım?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>MEBİ teknik destek veya yardım bölümüne nasıl ulaşırım?</Text>
+        <Text>MEBİ teknik destek bölümüne nasıl ulaşırım?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>Platformda sertifika verilen eğitimler nerede bulunur?</Text>
+        <Text>Sertifika verilen eğitimler nerede bulunur?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>Canlı ders veya video içerikleri açılmıyor, nasıl çözebilirim?</Text>
+        <Text>Video içerikleri açılmıyor, nasıl çözebilirim?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>MEBİ platformunda öğretmen–öğrenci görevleri nasıl takip edilir?</Text>
+        <Text>Öğretmen–öğrenci görevleri nasıl takip edilir?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.SSSbuttons} onPress={() => {setScreen("mebi")}} >
-        <Text>MEBİ hesabıma giriş yapamıyorum, ne yapmalıyım?</Text>
+        <Text>Giriş yapamıyorum, ne yapmalıyım?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.homeButton} onPress={()=> {setScreen("home")}}>
         <Text style={styles.homeButtonText}>◀</Text>
