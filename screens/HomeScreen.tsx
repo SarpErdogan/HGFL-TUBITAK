@@ -5,7 +5,7 @@ import { useScreenStore } from '../store/store';
 const HomeScreen: React.FC = () => {
   const { currentScreen, setScreen } = useScreenStore();
   return (
-    <View style={styles.container}>
+    <View style={styles.buttonContainer}>
       <TouchableOpacity style={styles.squareButton} onPress={() => {setScreen('search')}}>
         <Text>MEBİ</Text>
       </TouchableOpacity>
@@ -17,17 +17,24 @@ const HomeScreen: React.FC = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-               
+  container: { 
     justifyContent: 'center',
     alignItems: 'center',
     paddingBottom: 20,
   },
-
+  buttonContainer: {  
+    paddingTop:300,
+    flexDirection: "row",
+    justifyContent: 'center', 
+    alignItems: 'center',     
+    width: '100%', 
+    gap:10,                              
+  },
 
   squareButton: {
-    width: '100%',
-    height: "50%",
+    backgroundColor: "#63b1ffff",
+    width: '40%',
+    height: "80%",
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 20,
@@ -36,6 +43,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
     shadowRadius: 4,
+
   },
 
 
@@ -47,7 +55,7 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
-    color: '#fff',
+    color: '#0a84ffff',
     fontSize: 18,
     fontWeight: '600',
   },

@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   SSSbuttons: {
     width: '85%',
     height: 45,
-    backgroundColor: '#0A84FF',
+    backgroundColor: '#63b1ffff',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 8,
